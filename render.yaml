@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: appsmith
+    env: docker
+    plan: free
+    dockerfilePath: ./deploy/docker/Dockerfile
+    healthCheckPath: /
+    autoDeploy: false
